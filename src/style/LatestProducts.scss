@@ -1,0 +1,30 @@
+@import "fonts";
+
+.newest-products {
+  height: 100vh;
+  width: 100%;
+
+  // background-image: url("../assets//jonathan-borba-Yod824b0KDA-unsplash.jpg");
+}
+
+.each-slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 100%;
+}
+.see-products-btn {
+  position: relative;
+  z-index: 3;
+  margin-top: -3vh;
+  font-size: 1.6em;
+  font-family: $fontBowlby;
+  border: 1px solid black;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: black;
+  margin-left: 40%;
+}

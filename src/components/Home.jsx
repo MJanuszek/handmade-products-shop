@@ -1,7 +1,8 @@
 import React from "react";
+import "../style/Home.scss";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
-import NewestProducts from "./NewestProducts";
+import LatestProducts from "./LatestProducts";
 import About from "./About";
 import Header from "./Header";
 
@@ -10,7 +11,7 @@ function Home() {
     <>
       <Navigation />
       <Header />
-      <NewestProducts />
+      <LatestProducts />
       <About />
       <Footer />
     </>
