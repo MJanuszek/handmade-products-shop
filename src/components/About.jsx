@@ -5,6 +5,7 @@ function About() {
   return (
     <div className="about-section">
       <h1 className="about-title">About this website</h1>
+
       <p className="about-desctiption">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quos
         quam quasi cum id a ad ipsa, dicta nisi placeat corporis magnam sit
@@ -22,6 +23,7 @@ function About() {
         consectetur non autem quia architecto id fugit nostrum voluptate!
         Officiis excepturi nemo voluptas beatae quibusdam?
       </p>
+      <div className="logo"></div>
     </div>
   );
 }

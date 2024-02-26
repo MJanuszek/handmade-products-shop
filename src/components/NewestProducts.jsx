@@ -1,10 +1,11 @@
 import React from "react";
+import "../style/NewestProducts.scss";
 
 function NewestProducts() {
   return (
-    <>
-      <div className="products-slider">prod</div>
-    </>
+    <div className="newest-products">
+      <div className="products-slider"></div>
+    </div>
   );
 }
 
