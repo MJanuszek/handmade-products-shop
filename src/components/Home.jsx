@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import LatestProducts from "./LatestProducts";
 import About from "./About";
 import Header from "./Header";
+import HomePageGallery from "./HomePageGallery";
 
 function Home() {
   return (
@@ -12,6 +13,8 @@ function Home() {
       <Navigation />
       <Header />
       <LatestProducts />
+      <About />
+      <HomePageGallery />
       <About />
       <Footer />
     </>

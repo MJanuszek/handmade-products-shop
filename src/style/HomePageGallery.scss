@@ -1,0 +1,41 @@
+@import "fonts";
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.gallery-home {
+  height: 40vh;
+  display: flex;
+  //   align-items: center;
+  justify-content: space-around;
+}
+.gallery-img {
+  height: 40vh;
+  width: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    animation: spin 6s linear infinite;
+  }
+}
+
+.img-1 {
+  background-image: url("../assets/home-page-gallery/okeykat-rw81Rz5GrPo-unsplash.jpg");
+}
+
+.img-2 {
+  background-image: url("../assets/home-page-gallery/rhondak-native-florida-folk-artist-_Yc7OtfFn-0-unsplash.jpg");
+}
+.img-3 {
+  background-image: url("../assets/home-page-gallery/steve-johnson-A2OL6S9zB7o-unsplash.jpg");
+}
+.img-4 {
+  background-image: url("../assets/home-page-gallery/steve-johnson-OPyoU4zCwWI-unsplash.jpg");
+}
