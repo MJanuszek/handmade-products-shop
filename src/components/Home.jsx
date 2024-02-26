@@ -1,12 +1,15 @@
 import React from "react";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
+import NewestProducts from "./NewestProducts";
+import About from "./About";
 
 function Home() {
   return (
     <>
       <Navigation />
-      <p>home</p>
+      <NewestProducts />
+      <About />
       <Footer />
     </>
   );
