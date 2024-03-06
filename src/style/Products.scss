@@ -1,0 +1,51 @@
+@import "fonts";
+
+.product {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 10vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.product-img {
+  min-height: 400px;
+  min-width: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 22px;
+  box-shadow: 5px 5px 10px rgba(255, 205, 98, 0.3);
+}
+.product-title {
+  font-family: $fontBubblegum;
+}
+
+.product-description {
+  text-align: center;
+  font-size: 1.2em;
+  font-family: $fontOriginalSurfer;
+}
+
+.product-info {
+  font-size: 1.2em;
+  line-height: 2.5em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 40vw;
+  margin-left: 10vw;
+}
+
+.buy-btn {
+  font-family: $fontBowlby;
+  background-color: rgb(255, 221, 0);
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 1.1em;
+  margin-top: 4vh;
+  &:hover {
+    background-color: #ff9292;
+  }
+}
