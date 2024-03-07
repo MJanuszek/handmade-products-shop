@@ -3,6 +3,7 @@ import Navigation from "./Navigation";
 import Footer from "./Footer";
 import "../style/Products.scss";
 import BuyButton from "./BuyButton";
+import Basket from "./Basket";
 
 const allProducts = [
   {
@@ -53,6 +54,7 @@ function Products() {
   return (
     <>
       <Navigation />
+      <Basket />
       <div className="available-products">
         {allProducts.map((product, index) => (
           <div className="product" key={index}>
@@ -66,7 +68,7 @@ function Products() {
               <h1 className="product-title">{product.name}</h1>
               <h2>{product.price} PLN</h2>
               <p className="product-description">{product.description}</p>
-              <BuyButton />
+              <BuyButton product={product} />
             </div>
           </div>
         ))}

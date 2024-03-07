@@ -1,7 +1,13 @@
 import React from "react";
+import { useBasket } from "./BasketContext";
 
-function BuyButton() {
-  return <button className="buy-btn">Dodaj do koszyka</button>;
+function BuyButton({ product }) {
+  const { addToBasket } = useBasket();
+  return (
+    <button className="buy-btn" onClick={() => addToBasket(product)}>
+      Add to basket
+    </button>
+  );
 }
 
 export default BuyButton;

@@ -49,3 +49,16 @@
     background-color: #ff9292;
   }
 }
+
+.basket {
+  background-image: url("../assets/add-to-basket.png");
+  height: 100px;
+  width: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: 20vh;
+  right: 7vw;
+}
