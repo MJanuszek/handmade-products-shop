@@ -8,7 +8,9 @@ export const BasketProvider = ({ children }) => {
   const [basketItems, setBasketItems] = useState([]);
 
   const addToBasket = (product) => {
-    console.log("sss", product, "bi:", basketItems);
+    if (basketItems.length > 10) {
+      alert("Basket cannot have more than 10 items");
+    }
     setBasketItems((currentItems) => [...currentItems, product]);
   };
 

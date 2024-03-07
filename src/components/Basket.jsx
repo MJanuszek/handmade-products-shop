@@ -3,11 +3,13 @@ import React, { useState } from "react";
 
 function Basket() {
   const [showPopup, setShowPopup] = useState(false);
-  const { basketItems } = useBasket();
+  const { basketItems } = useBasket([]);
   function handleDisplayBasket() {
-    console.log("basket");
+    if (basketItems.length <= 0) {
+      alert("Nothing in basket");
+      return;
+    }
     setShowPopup(!showPopup);
-    console.log(showPopup, basketItems);
   }
   return (
     <>
@@ -16,7 +18,7 @@ function Basket() {
         <div className="popup">
           <div className="basket-items">
             {basketItems.map((item, index) => (
-              <div key={index}>
+              <div key={index} className="basket-item">
                 <h2>{item.name}</h2>
                 <p>{item.price} PLN</p>
               </div>
