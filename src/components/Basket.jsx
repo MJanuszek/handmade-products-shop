@@ -6,7 +6,7 @@ function Basket() {
   const { basketItems } = useBasket([]);
   function handleDisplayBasket() {
     if (basketItems.length <= 0) {
-      alert("Nothing in basket");
+      alert("Nothing in basket. Add products");
       return;
     }
     setShowPopup(!showPopup);
