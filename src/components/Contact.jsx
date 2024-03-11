@@ -9,9 +9,14 @@ function Contact() {
     email: "",
     message: "",
   });
+  const [inputValidated, setInputsValidation] = useState({
+    name: false,
+    message: false,
+  });
   function handleSubmitForm(e) {
     e.preventDefault();
-    console.log("ok");
+    validateForm(inputValues);
+    console.log(inputValidated, "submitted");
     setInputValues({
       name: "",
       email: "",
@@ -25,8 +30,10 @@ function Contact() {
       ...prevValues,
       [name]: value,
     }));
-    console.log(inputValues);
   }
+  // validate
+  function validateForm(value) {}
+  // --------------------------
   return (
     <>
       <Navigation />
