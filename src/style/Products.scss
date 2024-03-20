@@ -64,6 +64,7 @@
 }
 .popup {
   min-width: 50vw;
+  min-height: 40vh;
   max-height: 70vh;
   display: flex;
   flex-direction: column;
@@ -83,14 +84,21 @@
 }
 
 .close-popup-btn {
-  display: flex;
-  align-self: flex-end;
-  justify-self: baseline;
-  position: fixed;
   font-size: 1.2em;
   padding: 20px;
   border-radius: 4px;
   background-color: #ffc547;
+}
+
+.clear-basket-btn {
+  display: flex;
+  align-self: flex-end;
+  justify-self: baseline;
+  margin-bottom: 5vh;
+  font-size: 1.1em;
+  padding: 5px;
+  background-color: #fe84429c;
+  border-radius: 4px;
 }
 
 .basket-item {

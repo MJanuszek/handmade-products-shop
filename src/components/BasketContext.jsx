@@ -14,8 +14,12 @@ export const BasketProvider = ({ children }) => {
     setBasketItems((currentItems) => [...currentItems, product]);
   };
 
+  const clearBasket = () => {
+    setBasketItems([]);
+  };
+
   return (
-    <BasketContext.Provider value={{ basketItems, addToBasket }}>
+    <BasketContext.Provider value={{ basketItems, addToBasket, clearBasket }}>
       {children}
     </BasketContext.Provider>
   );
