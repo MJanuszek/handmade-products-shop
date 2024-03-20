@@ -1,5 +1,5 @@
 import { useBasket } from "./BasketContext";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function Basket() {
   const [showPopup, setShowPopup] = useState(false);
@@ -11,6 +11,8 @@ function Basket() {
     }
     setShowPopup(!showPopup);
   }
+
+  // -----------------------
   return (
     <>
       <div className="basket" onClick={handleDisplayBasket}></div>;

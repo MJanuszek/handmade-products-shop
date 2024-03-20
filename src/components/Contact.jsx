@@ -9,19 +9,37 @@ function Contact() {
     email: "",
     message: "",
   });
-  const [inputValidated, setInputsValidation] = useState({
-    name: false,
-    message: false,
-  });
+  const [errors, setErrors] = useState({});
+  // validate
+  function validateForm(value) {
+    let formIsValid = true;
+    let errors = {};
+    if (!/\S+@\S+\.\S+/.test(inputValues.email)) {
+      errors.email = "Invalid email address";
+      formIsValid = false;
+    }
+    if (inputValues.message.length <= 10) {
+      errors.message = "Message should be longer than 10 characters";
+      formIsValid = false;
+    }
+    setErrors(errors);
+    return formIsValid;
+  }
+
+  //
   function handleSubmitForm(e) {
     e.preventDefault();
-    validateForm(inputValues);
-    console.log(inputValidated, "submitted");
-    setInputValues({
-      name: "",
-      email: "",
-      message: "",
-    });
+    const isFormValidated = validateForm(inputValues);
+    if (isFormValidated) {
+      alert("Form submitted");
+      setInputValues({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } else {
+      alert("Form validation failed");
+    }
   }
   //
   function handleInputChange(e) {
@@ -31,8 +49,7 @@ function Contact() {
       [name]: value,
     }));
   }
-  // validate
-  function validateForm(value) {}
+
   // --------------------------
   return (
     <>
