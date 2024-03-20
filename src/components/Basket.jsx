@@ -11,6 +11,9 @@ function Basket() {
     }
     setShowPopup(!showPopup);
   }
+  function handleClosePopulBtn() {
+    setShowPopup(!showPopup);
+  }
 
   // -----------------------
   return (
@@ -18,6 +21,9 @@ function Basket() {
       <div className="basket" onClick={handleDisplayBasket}></div>;
       {showPopup && (
         <div className="popup">
+          <button className="close-popup-btn" onClick={handleClosePopulBtn}>
+            CLOSE BASKET
+          </button>
           <div className="basket-items">
             {basketItems.map((item, index) => (
               <div key={index} className="basket-item">
