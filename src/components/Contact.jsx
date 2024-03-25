@@ -38,7 +38,7 @@ function Contact() {
         message: "",
       });
     } else {
-      alert("Form validation failed");
+      alert("Message is to short");
     }
   }
   //

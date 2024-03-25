@@ -52,7 +52,7 @@ const allProducts = [
 
 function Products() {
   return (
-    <>
+    <div className="products-list">
       <Navigation />
       <Basket />
       <div className="available-products">
@@ -75,7 +75,7 @@ function Products() {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 }
 
