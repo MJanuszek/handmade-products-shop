@@ -1,10 +1,6 @@
 Website for handmade products maker.
 
-
-Visit site:
-
-
-Preview:
+Site Preview:
 ![img1](https://github.com/MJanuszek/handmade-products-shop/assets/82171710/2a7fecc2-a0c0-414c-b792-a9fd2e1c3fc4)
 ___________________________
 ![img2](https://github.com/MJanuszek/handmade-products-shop/assets/82171710/8bc06fce-1646-444b-9b33-417037b5e837)
